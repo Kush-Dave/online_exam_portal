@@ -3,6 +3,3 @@ venv
 /venv
 /venv/
 .env
-
-db.sqlite3
-/.sqlite3

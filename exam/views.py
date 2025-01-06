@@ -180,7 +180,12 @@ def admin_check_marks_view(request,pk):
     return render(request,'exam/admin_check_marks.html',{'results':results})
     
 
-
+def afterlogin_view(request):
+    if is_student(request.user):      
+        return redirect('student/student-dashboard')
+    
+    else:
+        return redirect('admin-dashboard')
 
 
 def aboutus_view(request):
